@@ -21,6 +21,9 @@
                 py+=20
                 ctx.fillRect(px,py,50,50)
                 anima = requestAnimationFrame(desenha)
+                if(py==500){
+                    py=0;
+                }
             }else{
                 ctx.fillRect(px,py,50,50)
                 px ++
